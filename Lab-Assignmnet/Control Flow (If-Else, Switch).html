@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Flow (If-Else, Switch)</title>
+</head>
+<body>
+
+    <h1 class="number"></h1>
+    <h1 class="day"></h1>
+
+    <script>
+
+//         Task 1:
+// • Write a JavaScript program to check if a number is positive, negative, or zero
+// usingan if-elsestatement.
+
+      let num = prompt("Enter a Number :");
+
+      if(num>0){
+        document.querySelector('.number').innerHTML=`${num} is a Positive Number`
+      }
+
+      else if(num<0){
+        document.querySelector(".number").innerHTML=`${num} is a Negative Number`
+      }
+
+      else{
+         document.querySelector(".number").innerHTML=`${num} Number is Zero`
+      }
+
+//       Task 2:
+// • Create a JavaScript program using a switchstatement to display the day of the
+// week based on the user input (e.g., 1 for Monday, 2 for Tuesday, etc.).
+
+      let day = prompt("Enter Number of the day :");
+      day=Number(day);
+
+      switch(day) {
+        case 1:
+            document.querySelector(".day").innerHTML=`it's Monday`;
+            
+            break;
+        case 2:
+            document.querySelector(".day").innerHTML=`it's Tuesday`;
+            
+            break;
+        case 3:
+            document.querySelector(".day").innerHTML=`it's Wednesday`;
+            
+            break;
+        case 4:
+            document.querySelector(".day").innerHTML=`it's Thursday`;
+            
+            break;
+        case 5:
+            document.querySelector(".day").innerHTML=`it's Friday`;
+            
+            break;
+        case 6:
+            document.querySelector(".day").innerHTML=`it's Saturday`;
+            
+            break;
+        case 7:
+            document.querySelector(".day").innerHTML=`it's Sunday`;
+            
+            break;
+      
+        default:
+            break;
+      }
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Open Console</h1>
+
+    <script>
+        function divideNumbers(dividend, divisor) {
+  try {
+    if (divisor === 0) {
+      throw new Error("Division by zero is not allowed");
+    }
+    const result = dividend / divisor;
+    console.log(`Result: ${result}`);
+    return result;
+  } catch (error) {
+    console.error(`Error: ${error.message}`);
+    return NaN;
+  } finally {
+    console.log("Division operation attempted");
+  }
+}
+
+// Test cases
+divideNumbers(10, 2);  
+divideNumbers(8, 0);   
+divideNumbers(15, 3); 
+    </script>
+</body>
+</html>

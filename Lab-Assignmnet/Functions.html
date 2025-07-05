@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Open Console</h1>
+    <script>
+
+        //         Task 1: Write a function greetUserthat accepts a user’s name as a parameter and displaysa
+        // greeting message (e.g., "Hello, John!").
+
+        function greetUser(name) {
+            return `Hello, ${name}!`;
+        }
+
+        const greeting = greetUser("John");
+        console.log(greeting);
+
+
+        // Task 2: Create a JavaScript function calculateSumthat takes two numbers as parameters,
+        // adds them, and returns the result.
+
+        function calculateSum(num1, num2) {
+            const number1 = Number(num1);
+            const number2 = Number(num2);
+
+            if (isNaN(number1) || isNaN(number2)) {
+                throw new Error('Both arguments must be valid numbers');
+            }
+
+            return number1 + number2;
+        }
+    </script>
+</body>
+
+</html>
